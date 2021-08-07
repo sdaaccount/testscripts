@@ -1,4 +1,7 @@
 #!/bin/bash
+declare -a equipment
+
+source ${HOME}/testscripts/advtools.sh
 
 echo "What is your name, adventurer?"
 
@@ -20,39 +23,6 @@ fi
 
 ####
 
-declare -a equipment
+pickEqp
 
-while [[ "$choice" != "q" ]]
-do
-
-	echo "Pick an equipment"; 
-	echo "s - spade";
-	echo "b - bread"; echo
-
-	read choice
-
-	case "$choice" in
-		[Ss] )
-			echo "Spade"
-			equipment+=(spade)
-			;;
-		[Bb] )
-			echo "Bread"
-			equipment+=(bread)
-			;;
-		[Qq] ) ;;
-		*    )
-			echo "Not proper choice"
-			;;
-	esac
-done
-
-####
-# List equipment
-
-echo
-echo "Your equipment:"
-for i in "${equipment[@]}"
-do
-	echo $i
-done
+listEqp
