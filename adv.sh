@@ -20,6 +20,8 @@ fi
 
 ####
 
+declare -a equipment
+
 while [[ "$choice" != "q" ]]
 do
 
@@ -32,9 +34,11 @@ do
 	case "$choice" in
 		[Ss] )
 			echo "Spade"
+			equipment+=(spade)
 			;;
 		[Bb] )
 			echo "Bread"
+			equipment+=(bread)
 			;;
 		[Qq] ) ;;
 		*    )
@@ -44,6 +48,11 @@ do
 done
 
 ####
+# List equipment
 
-
-
+echo
+echo "Your equipment:"
+for i in "${equipment[@]}"
+do
+	echo $i
+done
