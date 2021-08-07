@@ -20,9 +20,9 @@ fi
 
 ####
 
-read choice 
-
 echo "Pick an equipment"; echo
+
+read choice
 
 case "$choice" in
 	[Ss] )
