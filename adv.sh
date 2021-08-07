@@ -20,19 +20,30 @@ fi
 
 ####
 
-echo "Pick an equipment"; echo
+while [[ "$choice" != "q" ]]
+do
 
-read choice
+	echo "Pick an equipment"; 
+	echo "s - spade";
+	echo "b - bread"; echo
 
-case "$choice" in
-	[Ss] )
-		echo "Spade"
-		;;
-	[Bb] )
-		echo "Bread"
-		;;
-	*    )
-		echo "Not proper choice"
-		;;
-esac
+	read choice
+
+	case "$choice" in
+		[Ss] )
+			echo "Spade"
+			;;
+		[Bb] )
+			echo "Bread"
+			;;
+		[Qq] ) ;;
+		*    )
+			echo "Not proper choice"
+			;;
+	esac
+done
+
+####
+
+
 
