@@ -1,7 +1,6 @@
 #!/bin/bash
 
-username=sda
-
+read username
 
 line=$(grep $username /etc/passwd | tr ":" " ")
 
