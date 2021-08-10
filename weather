@@ -6,7 +6,7 @@
 "unit": "http://codes.wmo.int/common/unit/",
 "@vocab": "https://api.weather.gov/ontology#",
 "id": "https://api.weather.gov/points/39.7456,-97.0892",
-"type": "Feature",
+"type": "Feature" : "Something",
 "geometry": 
 "type": "Point",
 "coordinates": 
@@ -39,4 +39,4 @@
 "county": "https://api.weather.gov/zones/county/KSC201",
 "fireWeatherZone": "https://api.weather.gov/zones/fire/KSZ009",
 "timeZone": "America/Chicago",
-"radarStation": "KTWX"
+"radarStation": "KTWX" 

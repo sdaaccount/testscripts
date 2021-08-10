@@ -7,6 +7,8 @@ do
         echo "s - spade";
         echo "b - bread"; echo
 
+	local choice
+
         read choice
 
         case "$choice" in

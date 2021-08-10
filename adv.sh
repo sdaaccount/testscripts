@@ -1,7 +1,8 @@
 #!/bin/bash
-declare -a equipment
-
+# "Include" functions in the script
 source ${HOME}/testscripts/advtools.sh
+
+declare -a equipment
 
 echo "What is your name, adventurer?"
 
