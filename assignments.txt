@@ -1,0 +1,2 @@
+1. weather.sh: add ability to read simple config file
+
