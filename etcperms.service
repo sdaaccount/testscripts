@@ -1,0 +1,9 @@
+[Unit]
+Description=Check for files ownership and permissions in /etc
+Wants=spaceMonitor.timer
+
+[Service]
+ExecStart=/usr/bin/etcperms.sh
+
+[Install]
+WantedBy=multi-user.target

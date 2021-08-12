@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for etc permissions and ownership service
+Requires=spaceMonitor.service
+
+[Timer]
+Unit=etcperms.service
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target
+
